@@ -7,7 +7,7 @@ metadata:
     app: web-app
     platform: python
 spec:
-  replicas: 2
+  replicas:
   selector:
     matchLabels:
       app: web-app
@@ -16,8 +16,11 @@ spec:
       labels:
         app: web-app
     spec:
+            #      imagePullSecrets:
+            #      - name: docker-private-registry-key
       containers:
-      - name: python-web-app
-        image: sreejithvu/email-app:v5
+      - name: web-app
+        image: sreejithvu/email-jun17:first
+        #        imagePullPolicy: Always
         ports:
         - containerPort: 5000
