@@ -5,5 +5,5 @@ RUN pip install flask
 RUN pip install requests
 COPY MANAGE_EMAIL_BLACKLISTS/ /home/deployment/
 WORKDIR /home/deployment
-EXPOSE 8080
+EXPOSE 5000
 CMD python ./manage_email_blacklists.py
