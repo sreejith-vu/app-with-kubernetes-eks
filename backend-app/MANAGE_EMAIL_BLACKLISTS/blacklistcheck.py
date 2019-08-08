@@ -33,7 +33,7 @@ def email_blacklist_check(INFO, STATUS_CODE):
         print "Not blacklisted"
         return 0
     else:
-        print "Response received is: ", STATUS_CODE
+        print "Response received is: ", STATUS_CODE 
 
 
 def http_check(INFO, URL, HEADERS):
