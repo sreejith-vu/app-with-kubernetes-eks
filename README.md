@@ -35,8 +35,8 @@ Docker Containers running:
 ```
 MacBookPro:docker sreejithvu$ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                NAMES
-50008c226820        nginx:alpine        "nginx -g 'daemon of…"   3 minutes ago       Up 3 seconds        0.0.0.0:80->80/tcp   frontend-nginx
-23fc0ed278af        email-app:aug8      "/bin/sh -c 'python …"   53 minutes ago      Up 3 seconds        5000/tcp             backend-app
+090d0c0245df        email-app:aug8      "/bin/sh -c 'python …"   9 minutes ago       Up 9 minutes        5000/tcp             backend-app
+46379d8b7abc        nginx:alpine        "nginx -g 'daemon of…"   9 minutes ago       Up 9 minutes        0.0.0.0:80->80/tcp   frontend-nginx
 ```
 
 Stopping containers:
